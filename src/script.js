@@ -11,10 +11,8 @@ addButton.addEventListener("click", () => {
     
     //Lägger till objekt i en array av typen { productName, price, quantity }:
     let currProductObject = {product:(productName.value),price:(productPrice.value),quantity:1};
-    console.log(currProductObject)
-    let productExists = currentChart.find(item => item.product === currProductObject.product);
-    console.log("Exists: "+productExists);
 
+    let productExists = currentChart.find(item => item.product === currProductObject.product);
 
     if ( productExists ){
         //Kontrollerar om objektet redan finns i arrayen (genom att jämföra productName) – om det redan finns, öka quantity med 1:
