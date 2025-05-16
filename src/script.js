@@ -21,7 +21,7 @@ addButton.addEventListener("click", () => {
         //Om den inte finns, lägg till den i listan:
         currentChart.push(currProductObject);
     }
-    //Rensar input-fälten efter att en produkt har lagts till:
+    //Rensar input-fälten efter att en produkt har lagts till: 
     productName.value = "";
     productPrice.value = "";
 
